@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-// This is the original GigShieldArch component ported to Next.js
+// This is the original AuxiliaArch component ported to Next.js
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -151,7 +151,7 @@ export default function ArchitecturePage() {
           <div className="header">
             <a href="/" className="back-link">← Back to home</a>
             <div className="badge">DEVTrails 2026 · Q-Commerce Persona</div>
-            <h1 className="title">GigShield <span>AI</span></h1>
+            <h1 className="title">Auxilia <span>AI</span></h1>
             <p className="subtitle">Feasible Architecture · Revised Pipeline · Agent Flow</p>
           </div>
           <div className="tabs">
