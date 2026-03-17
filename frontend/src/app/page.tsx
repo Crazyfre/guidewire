@@ -170,7 +170,7 @@ export default function Home() {
           </div>
 
           <footer>
-            Built for <span>DEVTrails 2026</span> · GigShield AI · Q-Commerce Parametric Insurance
+            Built for <span>DEVTrails 2026</span> · Auxilia · Q-Commerce Parametric Insurance
           </footer>
         </div>
       </div>
