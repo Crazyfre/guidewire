@@ -22,7 +22,7 @@ class OnboardRequest(BaseModel):
     persona: str           # "qcom" | "food"
     zone_id: str
     zone_name: str
-    password: str = "gigshield123"  # Default for demo
+    password: str = "auxilia123"  # Default for demo
 
 
 class OnboardResponse(BaseModel):
