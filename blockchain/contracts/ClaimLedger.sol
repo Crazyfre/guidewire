@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 /**
  * @title ClaimLedger
- * @notice Tamper-proof audit log for GigShield AI parametric insurance claims.
+ * @notice Tamper-proof audit log for Auxilia parametric insurance claims.
  *         Deployed on Hardhat local testnet (chainId 31337).
  *
  * Functions:
