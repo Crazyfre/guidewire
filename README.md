@@ -1,4 +1,4 @@
-# GigShield AI — Phase 1: The Idea Document
+# Auxilia — Phase 1: The Idea Document
 
 ## 1. Requirement & Persona-Based Scenarios
 **Problem:** Gig workers strictly depend on daily output to survive. Sudden disruptions—severe weather, curfews, or sudden localized strikes—strip their income unceremoniously, and traditional insurance models are too slow, manual, and broad to cover these micro-shocks.
@@ -30,7 +30,7 @@ These are immutable thresholds that automatically trigger a claim evaluation:
 We chose a **Responsive Web App (Next.js/PWA)** for the initial phase. Over 95% of gig workers use budget Android devices with limited storage. Asking them to download another native app creates friction. A progressive web app allows instant onboarding via browser (zero install) while opening the door to native Firebase Push Notifications or WhatsApp integration later.
 
 ## 3. AI/ML Integration
-AI and Autonomous Agents are the core engine of GigShield:
+AI and Autonomous Agents are the core engine of Auxilia:
 - **Premium Calculation (RiskAgent):** An XGBoost Machine Learning model trains on historical zone disruption data, weather seasonality, and persona type to predict the probability of a disruption in the upcoming week. This generates the dynamic risk multiplier.
 - **Trigger Monitoring (TriggerAgent):** Asynchronous Python agents continuously poll data sources without human intervention.
 - **Fraud Detection (FraudAgent):** Executes 3 parallel checks via `asyncio`: 
