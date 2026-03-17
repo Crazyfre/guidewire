@@ -1,4 +1,4 @@
-# GigShield AI: Phase 1 Demonstration Video Script
+# Auxilia : Phase 1 Demonstration Video Script
 
 **Target Length:** ~2 minutes
 **Tone:** Professional, engaging, and solution-oriented.
@@ -7,14 +7,14 @@
 ---
 
 ### [0:00 - 0:20] Introduction & The Problem
-*(Visual: Start with the GigShield AI Homepage showing the Hero Section and Stats)*
+*(Visual: Start with the Auxilia AI Homepage showing the Hero Section and Stats)*
 
-**Speaker:** "Hello team, my name is [Your Name], and I'm excited to present **GigShield AI**—a multi-agent parametric insurance platform built specifically for gig economy workers. Delivery riders and mobility drivers survive on daily output. If an unexpected shock hits—like brutal 45-degree heat, sudden 20mm rainfall, or a localized strike blocking off their delivery zone—they lose their entire day's earnings. Traditional insurance doesn't cover this. It's too slow, too manual, and requires too much proof."
+**Speaker:** "Hello team, my name is [Your Name], and I'm excited to present **Auxilia**—a multi-agent parametric insurance platform built specifically for gig economy workers. Delivery riders and mobility drivers survive on daily output. If an unexpected shock hits—like brutal 45-degree heat, sudden 20mm rainfall, or a localized strike blocking off their delivery zone—they lose their entire day's earnings. Traditional insurance doesn't cover this. It's too slow, too manual, and requires too much proof."
 
 ### [0:20 - 0:50] The Solution & Workflow
 *(Visual: Switch to the "Rider Onboarding" Page, ideally clicking through the flow)*
 
-**Speaker:** "GigShield AI solves this using an autonomous, data-driven approach. When a rider onboards, they choose their persona and primary working zone. Instead of a bulky monthly fee, they pay a micro-premium—as low as 99 rupees a week. This isn't a flat rate; it's dynamically calculated in real-time by our **XGBoost Risk Agent**, which looks at historical weather data, seasonality, and zone volatility to assign a precise risk multiplier."
+**Speaker:** "Auxilia solves this using an autonomous, data-driven approach. When a rider onboards, they choose their persona and primary working zone. Instead of a bulky monthly fee, they pay a micro-premium—as low as 99 rupees a week. This isn't a flat rate; it's dynamically calculated in real-time by our **XGBoost Risk Agent**, which looks at historical weather data, seasonality, and zone volatility to assign a precise risk multiplier."
 
 ### [0:50 - 1:20] Autonomous Triggers & Architecture
 *(Visual: Switch to the "Live Zone Heatmap" or the "System Architecture" Page)*
@@ -29,4 +29,4 @@
 ### [1:50 - 2:00] Conclusion
 *(Visual: Back to the Homepage or an impactful final slide/screen)*
 
-**Speaker:** "By choosing a responsive Next.js Progressive Web App, we ensured riders wouldn't need to download another bulky mobile app, removing onboarding friction altogether. GigShield AI isn't just a prototype; it's a completely autonomous safety net for the gig economy. Thank you."
+**Speaker:** "By choosing a responsive Next.js Progressive Web App, we ensured riders wouldn't need to download another bulky mobile app, removing onboarding friction altogether. Auxilia isn't just a prototype; it's a completely autonomous safety net for the gig economy. Thank you."
