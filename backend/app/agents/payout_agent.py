@@ -69,7 +69,7 @@ class PayoutAgent:
             },
             "queue_if_low_balance": True,
             "reference_id":   claim_id,
-            "narration":      "GigShield Disruption Payout",
+            "narration":      "Auxilia Disruption Payout",
         }
         try:
             async with aiohttp.ClientSession() as s:
@@ -93,7 +93,7 @@ class PayoutAgent:
         payload = {
             "to":           f"/topics/rider_{phone}",
             "notification": {
-                "title": "🛡️ GigShield — Payout Sent!",
+                "title": "🛡️ Auxilia — Payout Sent!",
                 "body":  f"Disruption in {zone_name}. ₹{int(amount)} shielded — check UPI.",
             },
             "data": {"amount": str(amount), "zone": zone_name},
