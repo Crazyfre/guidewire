@@ -1,0 +1,12 @@
+node_modules
+.next
+venv
+__pycache__
+*.pyc
+.env
+.env.local
+backend/gigshield.db
+backend/.contract_address.json
+blockchain/artifacts
+blockchain/cache
+ml/zone_risk_model.pkl

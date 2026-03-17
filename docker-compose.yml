@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # ── 1. FastAPI Backend + Agents ──────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: gigshield-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - OPENWEATHERMAP_API_KEY=${OPENWEATHERMAP_API_KEY}
+      - NEWSAPI_KEY=${NEWSAPI_KEY}
+      - RAZORPAY_KEY_ID=${RAZORPAY_KEY_ID}
+      - RAZORPAY_KEY_SECRET=${RAZORPAY_KEY_SECRET}
+      - FIREBASE_SERVER_KEY=${FIREBASE_SERVER_KEY}
+      - HARDHAT_RPC_URL=${HARDHAT_RPC_URL:-http://hardhat:8545}
+      - CLAIM_LEDGER_ADDRESS=${CLAIM_LEDGER_ADDRESS}
+      - DATABASE_URL=sqlite+aiosqlite:///./gigshield.db
+    depends_on:
+      - hardhat
+    restart: unless-stopped
+
+  # ── 2. Next.js Frontend ─────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: gigshield-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+      - NEXT_PUBLIC_RAZORPAY_KEY_ID=${NEXT_PUBLIC_RAZORPAY_KEY_ID}
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # ── 3. Local Blockchain (Hardhat Testnet) ─────────────────
+  hardhat:
+    build:
+      context: ./blockchain
+      dockerfile: Dockerfile
+    container_name: gigshield-hardhat
+    ports:
+      - "8545:8545"
+    volumes:
+      - ./blockchain:/app
+    command: npm run node
+    restart: unless-stopped

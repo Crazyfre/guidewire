@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0e1a;
+  --surface: rgba(255,255,255,0.03);
+  --border: rgba(255,255,255,0.08);
+  --text: #e8eaf6;
+  --muted: #718096;
+  --blue: #63b3ed;
+  --green: #68d391;
+  --orange: #f6ad55;
+  --purple: #b794f4;
+  --red: #fc8181;
+  --teal: #81e6d9;
+}
+
+html, body { height: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(99,179,237,0.2); border-radius: 99px; }
+
+/* Utility */
+.mono { font-family: 'Space Mono', monospace; }
