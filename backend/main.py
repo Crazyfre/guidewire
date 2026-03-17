@@ -1,5 +1,5 @@
 """
-GigShield AI — FastAPI Backend
+Auxilia — FastAPI Backend
 Main application entry point with CORS, routers, and startup events.
 """
 import asyncio
@@ -32,7 +32,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="GigShield AI",
+    title="Auxilia",
     description="Parametric insurance backend for gig workers — multi-agent, blockchain-verified, instant UPI payouts.",
     version="1.0.0",
     lifespan=lifespan,
@@ -56,4 +56,4 @@ app.include_router(admin.router, prefix="/api/v1", tags=["Admin"])
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "service": "GigShield AI Backend"}
+    return {"status": "ok", "service": "Auxilia Backend"}
