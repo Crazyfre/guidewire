@@ -1,4 +1,4 @@
-"""SQLAlchemy ORM models for GigShield."""
+"""SQLAlchemy ORM models for Auxilia."""
 import uuid
 from datetime import datetime
 from sqlalchemy import String, Float, Integer, Boolean, DateTime, ForeignKey, JSON
